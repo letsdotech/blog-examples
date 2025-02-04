@@ -1,0 +1,54 @@
+# Binaries and compiled files
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Go specific
+/bin/
+/pkg/
+/vendor/
+
+# Generated Protocol Buffer files
+*.pb.go
+*_grpc.pb.go
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Environment files
+.env
+.env.local
+*.env
+
+# Log files
+*.log
+
+# Debug files
+debug/
+
+# Test cache
+*.test
+*.tmp
+
+# Build output
+build/
+dist/
+
+# Dependencies
+go.sum
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Project specific
+/tmp
+/temp
