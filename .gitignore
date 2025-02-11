@@ -52,3 +52,11 @@ Thumbs.db
 # Project specific
 /tmp
 /temp
+/certs
+
+# Certificates
+*.pem
+*.csr
+*.srl
+client.conf
+server.conf

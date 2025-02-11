@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package calc;
+option go_package = "ldtgrpc01/proto";
+
+// Define the service
+service Calculator {
+    rpc Add(AddRequest) returns (AddResponse) {}
+}
+
+// Define the messages
+message AddRequest {
+    int32 num1 = 1;
+    int32 num2 = 2;
+}
+
+message AddResponse {
+    int32 result = 1;
+}
