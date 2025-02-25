@@ -60,3 +60,5 @@ Thumbs.db
 *.srl
 client.conf
 server.conf
+
+.qodo
