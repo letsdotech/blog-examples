@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: grpc-server-service
+spec:
+  selector:
+    app: grpc-server  # Match this with your server deployment labels
+  ports:
+  - port: 50051
+    targetPort: 50051
+  type: ClusterIP

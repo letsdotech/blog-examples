@@ -1,0 +1,43 @@
+syntax = "proto3";
+
+package calc;
+option go_package = "ldtgrpc04/proto";
+
+service Calculator {
+  // Unary RPC
+  rpc Add(AddRequest) returns (AddResponse) {}
+  
+  // Server Streaming RPC
+  rpc GenerateNumbers(GenerateRequest) returns (stream NumberResponse) {}
+  
+  // Client Streaming RPC
+  rpc ComputeAverage(stream NumberRequest) returns (AverageResponse) {}
+  
+  // Bidirectional Streaming RPC
+  rpc ProcessNumbers(stream NumberRequest) returns (stream NumberResponse) {}
+}
+
+message AddRequest {
+  int64 num1 = 1;
+  int64 num2 = 2;
+}
+
+message AddResponse {
+  int64 result = 1;
+}
+
+message GenerateRequest {
+  int64 limit = 1;
+}
+
+message NumberResponse {
+  int64 number = 1;
+}
+
+message NumberRequest {
+  int64 number = 1;
+}
+
+message AverageResponse {
+  double result = 1;
+}
