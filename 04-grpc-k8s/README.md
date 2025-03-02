@@ -1,3 +1,3 @@
-## Intro to gRPC and Protocol Buffers using Go
+## gRPC in Kubernetes
 
-For [this blog post](https://letsdote.ch/post/intro-to-grpc-and-protocol-buffers-using-go/).
+For [this blog post](https://letsdote.ch/post/grpc-in-kubernetes/).
